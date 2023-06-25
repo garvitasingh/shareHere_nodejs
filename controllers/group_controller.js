@@ -40,7 +40,7 @@ export const getGroupById = async(req,res)=>{
 export const addGroup = async(req,res)=>{
     const {title,description,image,branch,year} = req.body;
     const userId = req.user.userId;
-    const baseUrl = 'localhost:6000/';
+    const baseUrl = 'https://sharehere.onrender.com/';
     const newimage = baseUrl+req.file.path;
     if(title == null || description == null || branch == null || year ==null){
         return res.status(400).json({message:"Enter all required fields"})

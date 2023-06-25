@@ -24,7 +24,7 @@ export const signUp = async(req,res)=>{
     let baseUrl;
     let newimage = null;
     if(profile !=null){
-        baseUrl = 'localhost:6000/';
+        baseUrl = 'https://sharehere.onrender.com/';
         newimage = baseUrl+req.file.path;   
     }
     if(f_name == null || role == null || mobile == null||password ==null){
